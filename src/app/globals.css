@@ -1,26 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800;900&display=swap');
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg-primary: #050b12;
+  --bg-secondary: #0a1628;
+  --bg-card: rgba(255, 255, 255, 0.04);
+  --bg-card-hover: rgba(255, 255, 255, 0.08);
+  --border-color: rgba(255, 255, 255, 0.08);
+  --border-hover: rgba(99, 212, 186, 0.4);
+  --text-primary: #f0f4f8;
+  --text-secondary: #8fa3b8;
+  --text-muted: #546a80;
+  --accent-teal: #63d4ba;
+  --accent-green: #5de5a0;
+  --accent-violet: #a78bfa;
+  --accent-pink: #f472b6;
+  --gradient-hero: linear-gradient(135deg, #0a1628 0%, #050b12 50%, #0d1a30 100%);
+  --glow-teal: 0 0 40px rgba(99, 212, 186, 0.15);
+  --glow-violet: 0 0 40px rgba(167, 139, 250, 0.15);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: 'Inter', system-ui, sans-serif;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* ─── Ambient background blobs ─────────────────────────── */
+body::before {
+  content: '';
+  position: fixed;
+  top: -20%;
+  left: -10%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(99, 212, 186, 0.07) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  bottom: -20%;
+  right: -10%;
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(circle, rgba(167, 139, 250, 0.07) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ─── Scrollbar ─────────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(99, 212, 186, 0.3);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(99, 212, 186, 0.5);
+}
+
+/* ─── Typography ────────────────────────────────────────── */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+/* ─── Glassmorphism card ────────────────────────────────── */
+.glass-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: all 0.35s cubic-bezier(0.23, 1, 0.32, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.glass-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, transparent 60%);
+  pointer-events: none;
+  border-radius: inherit;
+}
+
+.glass-card:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--border-hover);
+  transform: translateY(-4px);
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.4), var(--glow-teal);
+}
+
+/* ─── Category pill ─────────────────────────────────────── */
+.category-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  border-radius: 100px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: rgba(99, 212, 186, 0.12);
+  color: var(--accent-teal);
+  border: 1px solid rgba(99, 212, 186, 0.25);
+}
+
+/* ─── Gradient text ─────────────────────────────────────── */
+.gradient-text {
+  background: linear-gradient(135deg, var(--accent-teal) 0%, var(--accent-violet) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ─── Nav link ──────────────────────────────────────────── */
+.nav-link {
+  position: relative;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  transition: color 0.2s ease;
+  padding: 6px 12px;
+  border-radius: 8px;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent-teal), var(--accent-violet));
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--text-primary);
+  background: rgba(255,255,255,0.05);
+}
+
+.nav-link:hover::after {
+  width: 70%;
+}
+
+/* ─── Hero section ──────────────────────────────────────── */
+.hero-section {
+  position: relative;
+  padding: 80px 0 60px;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 300px;
+  background: radial-gradient(ellipse, rgba(99, 212, 186, 0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+/* ─── Prose overrides ───────────────────────────────────── */
+.prose {
+  color: var(--text-secondary) !important;
+  max-width: none;
+}
+
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4 {
+  color: var(--text-primary) !important;
+  font-family: 'Outfit', sans-serif;
+}
+
+.prose p {
+  line-height: 1.9;
+  color: #8fa3b8 !important;
+}
+
+.prose strong {
+  color: var(--text-primary) !important;
+}
+
+.prose a {
+  color: var(--accent-teal) !important;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(99, 212, 186, 0.3);
+  transition: border-color 0.2s;
+}
+
+.prose a:hover {
+  border-color: var(--accent-teal);
+}
+
+.prose blockquote {
+  border-left: 3px solid var(--accent-teal) !important;
+  background: rgba(99, 212, 186, 0.05) !important;
+  padding: 1rem 1.5rem !important;
+  border-radius: 0 12px 12px 0 !important;
+  color: var(--text-secondary) !important;
+}
+
+.prose code {
+  background: rgba(99, 212, 186, 0.1) !important;
+  color: var(--accent-teal) !important;
+  border-radius: 6px !important;
+  padding: 0.2em 0.5em !important;
+  font-size: 0.875em !important;
+}
+
+.prose pre {
+  background: rgba(0,0,0,0.4) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 16px !important;
+}
+
+/* ─── Table styles ──────────────────────────────────────── */
+.prose table {
+  width: 100% !important;
+  border-collapse: collapse !important;
+  border-radius: 12px !important;
+  overflow: hidden !important;
+  display: table !important;
+  margin: 28px 0 !important;
+  font-size: 0.9rem !important;
+}
+
+.prose thead {
+  background: linear-gradient(135deg, rgba(99,212,186,0.15) 0%, rgba(167,139,250,0.1) 100%) !important;
+}
+
+.prose thead th {
+  color: var(--accent-teal) !important;
+  font-family: 'Outfit', sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 0.78rem !important;
+  letter-spacing: 0.06em !important;
+  text-transform: uppercase !important;
+  padding: 14px 18px !important;
+  text-align: left !important;
+  border-bottom: 1px solid rgba(99,212,186,0.25) !important;
+  white-space: nowrap !important;
+}
+
+.prose tbody tr {
+  border-bottom: 1px solid rgba(255,255,255,0.05) !important;
+  transition: background 0.15s ease !important;
+}
+
+.prose tbody tr:last-child {
+  border-bottom: none !important;
+}
+
+.prose tbody tr:nth-child(even) {
+  background: rgba(255,255,255,0.02) !important;
+}
+
+.prose tbody tr:hover {
+  background: rgba(99,212,186,0.05) !important;
+}
+
+.prose tbody td {
+  padding: 12px 18px !important;
+  color: var(--text-secondary) !important;
+  vertical-align: middle !important;
+  border: none !important;
+  line-height: 1.5 !important;
+}
+
+.prose tbody td:first-child {
+  color: var(--text-primary) !important;
+  font-weight: 600 !important;
+}
+
+/* Wrap table in a scrollable container on small screens */
+.prose .table-wrapper,
+.prose table {
+  display: block;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.prose table {
+  display: table;
+  min-width: 100%;
+}
+
+/* ─── Fade-in animation ─────────────────────────────────── */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeInUp 0.6s cubic-bezier(0.23, 1, 0.32, 1) both;
+}
+
+.animate-fade-in-delay-1 { animation-delay: 0.1s; }
+.animate-fade-in-delay-2 { animation-delay: 0.2s; }
+.animate-fade-in-delay-3 { animation-delay: 0.3s; }
+
+/* ─── Shimmer border on hover ───────────────────────────── */
+@keyframes borderGlow {
+  0%, 100% { border-color: rgba(99, 212, 186, 0.2); }
+  50%       { border-color: rgba(99, 212, 186, 0.6); }
+}
+
+/* ─── Back button ───────────────────────────────────────── */
+.back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: 100px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--accent-teal);
+  background: rgba(99, 212, 186, 0.08);
+  border: 1px solid rgba(99, 212, 186, 0.2);
+  transition: all 0.25s ease;
+  text-decoration: none;
+}
+
+.back-btn:hover {
+  background: rgba(99, 212, 186, 0.15);
+  border-color: rgba(99, 212, 186, 0.4);
+  transform: translateX(-2px);
+}
+
+/* ─── Tag variants ──────────────────────────────────────── */
+.tag-heart     { background: rgba(244,114,182,0.12); color:#f472b6; border-color: rgba(244,114,182,0.3); }
+.tag-food      { background: rgba(93,229,160,0.12);  color:#5de5a0; border-color: rgba(93,229,160,0.3); }
+.tag-diabetes  { background: rgba(251,191,36,0.12);  color:#fbbf24; border-color: rgba(251,191,36,0.3); }
+.tag-fitness   { background: rgba(167,139,250,0.12); color:#a78bfa; border-color: rgba(167,139,250,0.3); }
+.tag-weight    { background: rgba(56,189,248,0.12);  color:#38bdf8; border-color: rgba(56,189,248,0.3); }
+.tag-cholesterol{ background: rgba(234,88,12,0.12); color:#ea580c; border-color: rgba(234,88,12,0.3); }
+.tag-general   { background: rgba(148,163,184,0.12); color:#94a3b8; border-color: rgba(148,163,184,0.3); }
+
+/* ─── Article prose images ──────────────────────────────── */
+.prose img {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  margin: 28px 0;
+  display: block;
+  box-shadow: 0 4px 32px rgba(99, 212, 186, 0.12), 0 2px 8px rgba(0,0,0,0.4);
+  border: 1px solid rgba(99, 212, 186, 0.15);
 }
