@@ -2,13 +2,13 @@
 
 **Effective Date:** Sep. 01, 2026 
 
-**Website URL:** [https://wellnesshub.vercel.app/](https://wellnesshub.vercel.app/) 
+**Website URL:** [https://wellnesshubnet.vercel.app/](https://wellnesshubnet.vercel.app/) 
 
 If you require any more information or have any questions about our site's disclaimer, please feel free to contact us. 
 
 ## **1. General Information & Not Medical Advice** 
 
-All the information on this website — **Wellness Hub** ([https://wellnesshub.vercel.app/](https://wellnesshub.vercel.app/)) — is published in good faith and for general informational and educational purposes only. 
+All the information on this website — **Wellness Hub** ([https://wellnesshubnet.vercel.app/](https://wellnesshubnet.vercel.app/)) — is published in good faith and for general informational and educational purposes only. 
 
 **Wellness Hub** does not offer medical advice, diagnosis, or treatment. The contents of this blog, such as text, graphics, images, and other material contained on the site, are not intended to be a substitute for professional medical advice, diagnosis, or treatment. 
 

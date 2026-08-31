@@ -2,9 +2,9 @@
 
 **Effective Date:** Sep. 01, 2026 
 
-## **Website URL:** [https://wellnesshub.vercel.app/](https://wellnesshub.vercel.app) 
+## **Website URL:** [https://wellnesshubnet.vercel.app/](https://wellnesshubnet.vercel.app) 
 
-At **Wellness Hub** (accessible from [https://wellnesshub.vercel.app/](https://wellnesshub.vercel.app/)), one of our main priorities is the 
+At **Wellness Hub** (accessible from [https://wellnesshubnet.vercel.app/](https://wellnesshubnet.vercel.app/)), one of our main priorities is the 
 
 privacy of our visitors. This Privacy Policy document outlines the types of information that is collected and recorded by **Wellness Hub** and how we use it. 
 

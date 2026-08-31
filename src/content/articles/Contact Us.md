@@ -8,7 +8,7 @@ If you have any questions, comments, or business inquiries, please feel free to 
 
 - **Email:** [amirccp786@gmail.com] 
 
-- **Website URL:** [https://wellnesshub.vercel.app/](https://wellnesshub.vercel.app) 
+- **Website URL:** [https://wellnesshubnet.vercel.app/](https://wellnesshubnet.vercel.app) 
 
 ## **What You Can Contact Us For:** 
 
