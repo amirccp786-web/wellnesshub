@@ -59,6 +59,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" data-scroll-behavior="smooth">
+      <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-GD6G6ZF4KK"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-GD6G6ZF4KK');
+            `,
+          }}
+        />
+      </head>
       <body className={inter.className} style={{ position: "relative" }}>
         {/* ── Header ── */}
         <header
