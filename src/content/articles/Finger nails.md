@@ -1,12 +1,14 @@
-# **Title: Amazing Things About Your Health That Your Fingernails Can Tell You** 
-
-##### **Date: 03-09-2026** 
-
-##### **Category: General** 
+---
+title: "Amazing Things About Your Health That Your Fingernails Can Tell You"
+date: "2026-09-03"
+category: "General"
+---
 
 Your nails can reveal a variety of illnesses, both benign and dangerous 
 
 ## **Fingernails** 
+
+![Fingernails](/Image/nails%201.jpg)
 
 More uses exist for your fingernails than only relieving tense knots and irritating itchiness. By their color, shape, and texture, they can also give clues about your general health. 
 
@@ -27,6 +29,8 @@ For instance, it may indicate cirrhosis, chronic renal failure, or congestive he
 Research indicates that red lunula may indicate heart failure. Patients with severe kidney disease frequently have half-and-half nails, where the white from the lunula extends halfway up the nail bed and the other half of the nail is darker in color, according to an expert. Bluish lunula may indicate Wilson's disease, a rare inherited genetic disorder in which copper accumulates in the liver, brain, and other organs. 
 
 ### **2. Changes in the Shape and Texture of the Nails** 
+
+![Fingernails](/Image/nails%202.jpg)
 
 #### **I. Chipped Nails** 
 
@@ -54,6 +58,8 @@ side effect of cancer treatment, or appear in patients with Raynaud's illness, a
 
 ### **4. Color Shifts** 
 
+![Fingernails](/Image/nails%203.jpg)
+
 Blue nails can indicate insufficient blood oxygen levels, according to experts. According to the doctor, there are numerous potential causes of this ailment, which is also known as cyanosis, such as heart difficulties or lung conditions like asthma or pneumonia. 
 
 A yellow discoloration on the nails is less serious. Patients with lung disorders such as chronic bronchitis may also experience this symptom. According to the expert, fungus can also cause nails to turn yellow, but it usually affects toenails rather than fingernails. Even while fungus infections of the nails can occur at any age, older persons are more susceptible. 
@@ -61,6 +67,8 @@ A yellow discoloration on the nails is less serious. Patients with lung disorder
 Should your nails seem white, it might be Terry's nails (see to the previous section) and indicate a problem with the heart, kidney, or liver. It could also be a hereditary trait that is inherited. 
 
 ### **Brittle, Thin Nails might only Require Minimal Attention** 
+
+![Fingernails](/Image/nails%204.jpg)
 
 A thyroid condition could be the cause of your thin, brittle nails, or it could just be that they require more moisture. "We always tell our patients that your nails do the same thing—they tend to get thin and dry and lose their ability to hold moisture," the doctor explains. Additionally, nails can absorb moisture just like skin does, which is why experts advise applying Vaseline on them when they feel dry. According to the expert, "and that can kind of help prevent some of the cracking and splitting" from typical wear and strain. 
 

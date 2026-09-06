@@ -50,6 +50,7 @@ const NAV_LINKS = [
   { href: "/?category=Weight Loss", label: "Weight Loss" },
   { href: "/?category=Cholesterol", label: "Cholesterol" },
   { href: "/?category=General", label: "General" },
+  { href: "/?category=Eye", label: "Eye" },
 ];
 
 export default function RootLayout({

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { getSortedArticlesData } from "@/utils/markdown";
 
 const CATEGORY_TAG_MAP: Record<string, string> = {
@@ -19,6 +20,7 @@ const CATEGORY_ICONS: Record<string, string> = {
   "Weight Loss": "⚖",
   "Cholesterol": "🩸",
   "General": "📌",
+  "Eye": "👁️",
 };
 
 const CATEGORIES = [
@@ -30,6 +32,7 @@ const CATEGORIES = [
   { label: "Weight Loss", href: "/?category=Weight+Loss" },
   { label: "Cholesterol", href: "/?category=Cholesterol" },
   { label: "General", href: "/?category=General" },
+  { label: "Eye", href: "/?category=Eye" },
 ];
 
 export default async function Home(
@@ -96,18 +99,31 @@ export default async function Home(
           </h1>
 
           {!categoryFilter && (
-            <p
+            <div
               className="animate-fade-in animate-fade-in-delay-2"
               style={{
-                color: "var(--text-secondary)",
-                fontSize: "1.1rem",
-                lineHeight: 1.7,
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
                 marginBottom: "40px",
               }}
             >
-              Expert insights on heart health, nutrition, fitness, and diabetes
-              management — curated for your healthiest life.
-            </p>
+              <Image
+                src="/wellness-hero.jpg"
+                alt="Wellness – Live Better Every Day"
+                width={900}
+                height={506}
+                priority
+                style={{
+                  width: "100%",
+                  maxWidth: "900px",
+                  height: "auto",
+                  borderRadius: "20px",
+                  boxShadow: "0 24px 64px rgba(0,0,0,0.45)",
+                  objectFit: "cover",
+                }}
+              />
+            </div>
           )}
         </div>
 

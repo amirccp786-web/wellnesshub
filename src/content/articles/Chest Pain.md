@@ -1,6 +1,6 @@
 ---
 title: "What are the Chest Pain Causes?"
-date: "26 05 2026"
+date: "2026-08-26"
 category: "Heart Health"
 ---
 
