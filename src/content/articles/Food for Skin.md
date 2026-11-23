@@ -4,11 +4,11 @@ date: "2026-11-23"
 category: "Healthy Food"
 ---
 
+## **Skin Health and Food**
+
 Skin is the body’s largest organ, and it serves us throughout our lives. Proper skincare not only helps us look youthful and fresh, but it also supports overall health. 
 
 Skin acts as a protective barrier between our body and the living environment. Consequently, it is susceptible to damage from various factors. 
-
-## **Skin Health and Food** 
 
 ![Foods for Youthful Skin](/Image/Food%20for%20Skin%201.jpg)
 

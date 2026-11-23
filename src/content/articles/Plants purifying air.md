@@ -4,6 +4,8 @@ date: "2026-11-23"
 category: "General"
 ---
 
+## **Purifying Home Air**
+
 Most people don’t realize how much pollution is in the indoor environment of buildings, where we spend most of our time. 
 
 For example, many of the products we use to clean and freshen our homes, schools, and workplaces add hidden toxins to the air. 
@@ -17,8 +19,6 @@ For example, many of the products we use to clean and freshen our homes, schools
 Indoor air pollution is extremely complex, messy, and often beyond people’s control. 
 
 For example, road traffic produces nitrogen dioxide, while moisture and structural problems in buildings can lead to rot. 
-
-## **Purifying Home Air** 
 
 ![Purifying Home Air with Houseplants](/Image/plants%20purifying%20air%201.jpg)
 

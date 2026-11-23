@@ -4,13 +4,13 @@ date: "2026-11-23"
 category: "Heart Health"
 ---
 
+## **Stress** 
+
 Health issues are linked to excessive stress. Can stress levels be quantified precisely? 
 
 Although stress is a normal and unavoidable aspect of life, many people believe they are under too much stress. However, "excessive stress" cannot be defined objectively. Many people find stress difficult to describe or measure. 
 
 Stress can be measured in several ways. These examine biomarkers, or physiological reactions, to assess how your body reacts to stress. 
-
-## **Stress** 
 
 ![How Can Stress Be Measured](/Image/Stress%201.jpg)
 
