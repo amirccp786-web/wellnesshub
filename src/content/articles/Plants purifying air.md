@@ -18,9 +18,9 @@ Indoor air pollution is extremely complex, messy, and often beyond people’s co
 
 For example, road traffic produces nitrogen dioxide, while moisture and structural problems in buildings can lead to rot. 
 
-![Purifying Home Air with Houseplants](/Image/plants%20purifying%20air%201.jpg)
-
 ## **Purifying Home Air** 
+
+![Purifying Home Air with Houseplants](/Image/plants%20purifying%20air%201.jpg)
 
 ### **Expensive Solution** 
 

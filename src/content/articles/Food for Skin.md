@@ -8,9 +8,9 @@ Skin is the body’s largest organ, and it serves us throughout our lives. Prope
 
 Skin acts as a protective barrier between our body and the living environment. Consequently, it is susceptible to damage from various factors. 
 
-![Foods for Youthful Skin](/Image/Food%20for%20Skin%201.jpg)
-
 ## **Skin Health and Food** 
+
+![Foods for Youthful Skin](/Image/Food%20for%20Skin%201.jpg)
 
 According to Jean Krutmann, a professor of dermatology at the Leibniz Research Institute for Environmental Medicine, "Air pollution and changing weather conditions also play a role in shaping the structure of the skin." 
 

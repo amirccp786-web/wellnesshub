@@ -10,9 +10,9 @@ Although stress is a normal and unavoidable aspect of life, many people believe 
 
 Stress can be measured in several ways. These examine biomarkers, or physiological reactions, to assess how your body reacts to stress. 
 
-![How Can Stress Be Measured](/Image/Stress%201.jpg)
-
 ## **Stress** 
+
+![How Can Stress Be Measured](/Image/Stress%201.jpg)
 
 ### **How is Stress Measured?** 
 
