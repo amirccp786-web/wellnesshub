@@ -48,6 +48,14 @@ const CATEGORY_BANNERS: Record<string, { src: string; alt: string }> = {
     src: "/category-cholesterol.jpg",
     alt: "Cholesterol – Cardiovascular Wellness",
   },
+  "General": {
+    src: "/category-general.jpg",
+    alt: "General Wellness – Holistic Daily Health & Vitality",
+  },
+  "Eye": {
+    src: "/category-eye.jpg",
+    alt: "Eye Health – Vision Care & Wellness",
+  },
 };
 
 const DEFAULT_BANNER = {
