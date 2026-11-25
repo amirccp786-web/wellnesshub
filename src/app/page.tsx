@@ -23,6 +23,38 @@ const CATEGORY_ICONS: Record<string, string> = {
   "Eye": "👁️",
 };
 
+const CATEGORY_BANNERS: Record<string, { src: string; alt: string }> = {
+  "Heart Health": {
+    src: "/category-heart-health.jpg",
+    alt: "Heart Health – Evidence-Based Wellness",
+  },
+  "Healthy Food": {
+    src: "/category-healthy-food.jpg",
+    alt: "Healthy Food – Mindful Nutrition",
+  },
+  "Diabetes": {
+    src: "/category-diabetes.jpg",
+    alt: "Diabetes – Blood Sugar & Metabolic Health",
+  },
+  "Fitness": {
+    src: "/category-fitness.jpg",
+    alt: "Fitness – Active Living & Movement",
+  },
+  "Weight Loss": {
+    src: "/category-weight-loss.jpg",
+    alt: "Weight Loss – Sustainable Living",
+  },
+  "Cholesterol": {
+    src: "/category-cholesterol.jpg",
+    alt: "Cholesterol – Cardiovascular Wellness",
+  },
+};
+
+const DEFAULT_BANNER = {
+  src: "/wellness-hero.jpg",
+  alt: "Wellness – Live Better Every Day",
+};
+
 const CATEGORIES = [
   { label: "All", href: "/" },
   { label: "Heart Health", href: "/?category=Heart+Health" },
@@ -45,6 +77,9 @@ export default async function Home(
   const filteredArticles = categoryFilter
     ? allArticles.filter((article) => article.category === categoryFilter)
     : allArticles;
+
+  const currentBanner =
+    (categoryFilter && CATEGORY_BANNERS[categoryFilter]) || DEFAULT_BANNER;
 
   return (
     <>
@@ -98,33 +133,32 @@ export default async function Home(
             )}
           </h1>
 
-          {!categoryFilter && (
-            <div
-              className="animate-fade-in animate-fade-in-delay-2"
+          <div
+            className="animate-fade-in animate-fade-in-delay-2"
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              marginBottom: "40px",
+            }}
+          >
+            <Image
+              key={currentBanner.src}
+              src={currentBanner.src}
+              alt={currentBanner.alt}
+              width={900}
+              height={506}
+              priority
               style={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                marginBottom: "40px",
+                width: "100%",
+                maxWidth: "900px",
+                height: "auto",
+                borderRadius: "20px",
+                boxShadow: "0 24px 64px rgba(0,0,0,0.45)",
+                objectFit: "cover",
               }}
-            >
-              <Image
-                src="/wellness-hero.jpg"
-                alt="Wellness – Live Better Every Day"
-                width={900}
-                height={506}
-                priority
-                style={{
-                  width: "100%",
-                  maxWidth: "900px",
-                  height: "auto",
-                  borderRadius: "20px",
-                  boxShadow: "0 24px 64px rgba(0,0,0,0.45)",
-                  objectFit: "cover",
-                }}
-              />
-            </div>
-          )}
+            />
+          </div>
         </div>
 
         {/* ── Category Filter Pills ── */}
@@ -135,7 +169,7 @@ export default async function Home(
             justifyContent: "center",
             flexWrap: "wrap",
             gap: "10px",
-            marginTop: categoryFilter ? "32px" : "0",
+            marginTop: "0",
           }}
         >
           {CATEGORIES.map(({ label, href }) => {
